@@ -26,6 +26,8 @@ info = [["name", "age", "job"],
        ["John", 30, "Data Scientist"],
        ["Jane", 25, "Web Developer"]]
 
+
+# with statement provides proper resource management, when the code block completes, the file is closed
 with open("output.csv", "w") as file:
     writer = csv.writer(file) 
     for row in info:
